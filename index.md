@@ -1,1 +1,0 @@
-## Ricardo Holguin - blog personal 
