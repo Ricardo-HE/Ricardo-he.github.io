@@ -15,7 +15,7 @@
   
     
   
-  <meta name="description" content="Antesedenctes Actualmente curso la materia de redes neuronales impartida por el profesor Julio Waissman, donde para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos dio la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de Github que nos pudieran ayudar de inspiración, pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería).">
+  <meta name="description" content="Red GAN que a partir de un bosquejo de un perro, esta genera una imagen de un perro shiba inu.">
 
   
   <link rel="alternate" hreflang="es" href="https://ricardohe97.github.io/post/sketch2shiba/">
@@ -78,8 +78,8 @@
   
 
   
-  <link rel="alternate" href="https://ricardohe97.github.io/index.xml" type="application/rss+xml" title="Academic">
-  <link rel="feed" href="https://ricardohe97.github.io/index.xml" type="application/rss+xml" title="Academic">
+  <link rel="alternate" href="https://ricardohe97.github.io/index.xml" type="application/rss+xml" title="Ricardo Holguin">
+  <link rel="feed" href="https://ricardohe97.github.io/index.xml" type="application/rss+xml" title="Ricardo Holguin">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -93,10 +93,10 @@
   <meta property="twitter:site" content="@RichieGCC">
   <meta property="twitter:creator" content="@RichieGCC">
   
-  <meta property="og:site_name" content="Academic">
+  <meta property="og:site_name" content="Ricardo Holguin">
   <meta property="og:url" content="https://ricardohe97.github.io/post/sketch2shiba/">
-  <meta property="og:title" content="Sketch2shiba | Academic">
-  <meta property="og:description" content="Antesedenctes Actualmente curso la materia de redes neuronales impartida por el profesor Julio Waissman, donde para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos dio la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de Github que nos pudieran ayudar de inspiración, pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería).">
+  <meta property="og:title" content="Sketch2shiba | Ricardo Holguin">
+  <meta property="og:description" content="Red GAN que a partir de un bosquejo de un perro, esta genera una imagen de un perro shiba inu.">
   
   
     
@@ -112,7 +112,7 @@
 
   
 
-  <title>Sketch2shiba | Academic</title>
+  <title>Sketch2shiba | Ricardo Holguin</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -121,7 +121,7 @@
   <div class="container">
 
     
-      <a class="navbar-brand" href="/">Academic</a>
+      <a class="navbar-brand" href="/">Ricardo Holguin</a>
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
               data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
@@ -265,7 +265,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min de lectura
+    4 min de lectura
   </span>
   
 
@@ -395,7 +395,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min de lectura
+    4 min de lectura
   </span>
   
 
@@ -491,9 +491,35 @@
 
 <h2 id="antesedenctes">Antesedenctes</h2>
 
-<p>Actualmente curso la materia de redes neuronales impartida por el profesor <a href="http://mat.uson.mx/~juliowaissman/" target="_blank">Julio Waissman</a>, donde para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos dio la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de <a href="https://github.com/" target="_blank">Github</a> que nos pudieran ayudar de inspiración, pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería). Entonces decidí buscar otros proyectos en internet, y fue un poco después de cuando decidí buscar que me encontré con una página de un <a href="http://cs231n.stanford.edu/project.html" target="_blank">curso de Stanford de Redes convolucionales para reconocimiento visual</a> donde en dicho curso el profesor les dejó como proyecto algo similar a lo que nos habían dejado a nosotros, y al igual que nuestro maestro, también dejó material que podría servir de inspiración y con ello habían proyectos de generaciones pasadas del curso, articulos, proyectos de github, entre otros. La cantidad de diferentes proyectos que había en esta página eran demasiados, pero entre ellos encontré un proyecto de <a href="http://cs231n.stanford.edu/reports/2017/pdfs/403.pdf" target="_blank">coloración automática de bosquejos</a> donde, en resumen, su red lo que hacía era que a base de un bosquejo o dibujo de algún paisaje, la red colorea el dibujo. Este proyecto se basó en un modelo de red neuronal llamado <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank">pix2pix</a> el cual tiene su propio artículo llamado <a href="https://arxiv.org/pdf/1611.07004.pdf" target="_blank">Image-to-Image Translation with Conditional Adversarial Networks</a> el cual tiene su propio artículo llamado <a href="https://arxiv.org/pdf/1611.07004.pdf" target="_blank">Image-to-Image Translation with Conditional Adversarial Networks</a>.</p>
+<p>Actualmente curso la materia de redes neuronales impartida por el profesor <a href="http://mat.uson.mx/~juliowaissman/" target="_blank">Julio Waissman</a>, donde para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos dio la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de <a href="https://github.com/" target="_blank">Github</a> que nos pudieran ayudar de inspiración, pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería). Entonces decidí buscar otros proyectos en internet, y fue un poco después de cuando decidí buscar que me encontré con una página de un <a href="http://cs231n.stanford.edu/project.html" target="_blank">curso de Stanford de Redes convolucionales para reconocimiento visual</a> donde en dicho curso el profesor les dejó como proyecto algo similar a lo que nos habían dejado a nosotros, y al igual que nuestro maestro, también dejó material que podría servir de inspiración y con ello habían proyectos de generaciones pasadas del curso, articulos, proyectos de github, entre otros. La cantidad de diferentes proyectos que había en esta página eran demasiados, pero entre ellos encontré un proyecto de <a href="http://cs231n.stanford.edu/reports/2017/pdfs/403.pdf" target="_blank">coloración automática de bosquejos</a> donde, en resumen, su red lo que hacía era que a base de un bosquejo o dibujo de algún paisaje, la red colorea el dibujo. Este proyecto se basó en un modelo de red neuronal llamado <a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix" target="_blank">pix2pix</a> donde tiene su propio artículo llamado <a href="https://arxiv.org/pdf/1611.07004.pdf" target="_blank">Image-to-Image Translation with Conditional Adversarial Networks</a> el cual tiene su propio artículo llamado <a href="https://arxiv.org/pdf/1611.07004.pdf" target="_blank">Image-to-Image Translation with Conditional Adversarial Networks</a>.</p>
 
-<p>El modelo <em>pix2pix</em> es una red generativa antagónica (GAN) el cual tiene como intención ser una red generadora de imágenes de propósito general, donde dependiendo de qué conjunto de imágenes se use para entrenar la red, esta puede producir una imagen de salida a partir de una imagen de entrada y esta imagen de salida es parecida al conjunto de imágenes de salida con el que se entrenó</p>
+<h2 id="modelo-pix2pix">Modelo pix2pix</h2>
+
+<p>El modelo <strong><em>pix2pix</em></strong> es una red generativa antagónica (<a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank">GAN</a>) el cual tiene como intención ser una red generadora de imágenes de propósito general, donde dependiendo de qué conjunto de imágenes se use para entrenar la red, esta puede producir una imagen de salida a partir de una imagen de entrada y esta imagen de salida es parecida al conjunto de imágenes de salida con el que se entrenó. Y la manera en que funciona es que en realidad se usan dos redes neuronales, una red <strong><em>discriminativa</em></strong> y una red <strong><em>generativa</em></strong>, donde la red generativa trata de producir imágenes par a engañar a la red discriminativa pero el objetivo de esta última red es de aprender a distinguir entre una imagen real y una imagen falsa que haya hecho la red generativa. Entonces el proceso de aprendizaje del modelo pix2pix es básicamente hacer que la red generativa genere imágenes lo más cercano posible a las imágenes reales y la red discriminativa se vuelva mejor diferenciando entre las imágenes reales y las que genere la red generativa. Cuando se termine de entrenar la red del modelo pix2pix solo se usará la red generativa, pues el punto de todo esto es hacer una red que genere imágenes a partir de otra imagen.</p>
+
+<p>Las arquitecturas que usan las dos redes de pix2pix son:</p>
+
+<ul>
+<li>Red generativa: El modelo propone usar dos tipos de arquitecturas: <a href="https://machinelearningmastery.com/encoder-decoder-recurrent-neural-network-models-neural-machine-translation/" target="_blank"><strong><em>encoder-decoder</em></strong></a> y <a href="https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/" target="_blank"><strong><em>U-Net</em></strong></a>. En una red convolucional consiste en hacer una convolución (downsampling o submuestreo) tras convolución a la imagen usando métodos como max pooling para encontrar los valores más importantes en un grupo de pixeles de la imagen y asi poder generalizar la información que esta en una imagen no importando en que parte de la imagen este dicha información. Entonces, lo que propone pix2pix es que una vez submuestreado la imagen de entrada lo más que se desea, se hace lo contrario al convolución y se hace una convolucion para atras (<em>convolución transpuesta</em> o <em>deconvolución</em> (este último termino se recomienda no usarlo ya que es usada en otras áreas de las matemáticas o visión de computadoras)) hasta llegar a las dimensiones de la imagen original de entrada. Pero esta idea se ha mejorado usando una modificación llamada <a href="https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf" target="_blank"><em>encoder-decoder</em></a> que es una arquitectura relativamente nueva del 2014 (no tanto para el área del aprendizaje profundo que es un área que se desarrolla muy rápido) el cual propone traer información de la imagen en un &ldquo;punto del tiempo&rdquo; de cuando estabamos convolucionando la imagen a otro &ldquo;punto del tiempo&rdquo; de cuando estamos convolucionando para atras cuando este tiene la misma dimensión que la imagen de donde estamos trayendo información, esto se puede ver algo así:</li>
+</ul>
+
+
+
+
+<figure>
+
+<img src="encoder_decoder.png" />
+
+
+
+<figcaption data-pre="Figura " data-post=":" >
+  <h4>Diagrama de la arquitectura encoder_decoder</h4>
+  
+</figcaption>
+
+</figure>
+
+<h2 id="mi-modelo-sketch2shiba">Mi modelo sketch2shiba</h2>
 
     </div>
 
