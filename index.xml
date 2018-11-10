@@ -5,10 +5,26 @@
     <link>https://ricardohe97.github.io/</link>
     <description>Recent content in Academic on Academic</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>es</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sketch2shiba</title>
+      <link>https://ricardohe97.github.io/post/sketch2shiba/</link>
+      <pubDate>Fri, 09 Nov 2018 11:18:37 -0700</pubDate>
+      
+      <guid>https://ricardohe97.github.io/post/sketch2shiba/</guid>
+      <description>
+
+&lt;h2 id=&#34;antesedenctes&#34;&gt;Antesedenctes&lt;/h2&gt;
+
+&lt;p&gt;Actualmente curso la materia de redes neuronales impartida por el profesor &lt;a href=&#34;http://mat.uson.mx/~juliowaissman/&#34; target=&#34;_blank&#34;&gt;Julio Waissman&lt;/a&gt;, donde para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos dio la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; que nos pudieran ayudar de inspiración, pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería). Entonces decidí buscar otros proyectos en internet, y fue un poco después de cuando decidí buscar que me encontré con una página de un &lt;a href=&#34;http://cs231n.stanford.edu/project.html&#34; target=&#34;_blank&#34;&gt;curso de Stanford de Redes convolucionales para reconocimiento visual&lt;/a&gt; donde en dicho curso el profesor les dejó como proyecto algo similar a lo que nos habían dejado a nosotros, y al igual que nuestro maestro, también dejó material que podría servir de inspiración y con ello habían proyectos de generaciones pasadas del curso, articulos, proyectos de github, entre otros. La cantidad de diferentes proyectos que había en esta página eran demasiados, pero entre ellos encontré un proyecto de &lt;a href=&#34;http://cs231n.stanford.edu/reports/2017/pdfs/403.pdf&#34; target=&#34;_blank&#34;&gt;coloración automática de bosquejos&lt;/a&gt; donde, en resumen, su red lo que hacía era que a base de un bosquejo o dibujo de algún paisaje, la red colorea el dibujo. Este proyecto se basó en un modelo de red neuronal llamado &lt;a href=&#34;https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix&#34; target=&#34;_blank&#34;&gt;pix2pix&lt;/a&gt; el cual tiene su propio artículo llamado &lt;a href=&#34;https://arxiv.org/pdf/1611.07004.pdf&#34; target=&#34;_blank&#34;&gt;Image-to-Image Translation with Conditional Adversarial Networks&lt;/a&gt; el cual tiene su propio artículo llamado &lt;a href=&#34;https://arxiv.org/pdf/1611.07004.pdf&#34; target=&#34;_blank&#34;&gt;Image-to-Image Translation with Conditional Adversarial Networks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;El modelo &lt;em&gt;pix2pix&lt;/em&gt; es una red generativa antagónica (GAN) el cual tiene como intención ser una red generadora de imágenes de propósito general, donde dependiendo de qué conjunto de imágenes se use para entrenar la red, esta puede producir una imagen de salida a partir de una imagen de entrada y esta imagen de salida es parecida al conjunto de imágenes de salida con el que se entrenó&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

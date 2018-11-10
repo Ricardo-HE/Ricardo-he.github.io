@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "authors": [
+      "Ricardo Holguin Esquer"
+    ],
+    "categories": [
+      "Deep learning"
+    ],
+    "content": " Antesedenctes Actualmente curso la materia de redes neuronales impartida por el profesor Julio Waissman, donde para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos dio la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de Github que nos pudieran ayudar de inspiración, pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería). Entonces decidí buscar otros proyectos en internet, y fue un poco después de cuando decidí buscar que me encontré con una página de un curso de Stanford de Redes convolucionales para reconocimiento visual donde en dicho curso el profesor les dejó como proyecto algo similar a lo que nos habían dejado a nosotros, y al igual que nuestro maestro, también dejó material que podría servir de inspiración y con ello habían proyectos de generaciones pasadas del curso, articulos, proyectos de github, entre otros. La cantidad de diferentes proyectos que había en esta página eran demasiados, pero entre ellos encontré un proyecto de coloración automática de bosquejos donde, en resumen, su red lo que hacía era que a base de un bosquejo o dibujo de algún paisaje, la red colorea el dibujo. Este proyecto se basó en un modelo de red neuronal llamado pix2pix el cual tiene su propio artículo llamado Image-to-Image Translation with Conditional Adversarial Networks el cual tiene su propio artículo llamado Image-to-Image Translation with Conditional Adversarial Networks.\nEl modelo pix2pix es una red generativa antagónica (GAN) el cual tiene como intención ser una red generadora de imágenes de propósito general, donde dependiendo de qué conjunto de imágenes se use para entrenar la red, esta puede producir una imagen de salida a partir de una imagen de entrada y esta imagen de salida es parecida al conjunto de imágenes de salida con el que se entrenó\n",
+    "date": 1541787517,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "es",
+    "lastmod": 1541787517,
+    "objectID": "3412d1625f3ae8c86e727ad1630e8160",
+    "permalink": "https://ricardohe97.github.io/post/sketch2shiba/",
+    "publishdate": "2018-11-09T11:18:37-07:00",
+    "relpermalink": "/post/sketch2shiba/",
+    "section": "post",
+    "summary": "Antesedenctes Actualmente curso la materia de redes neuronales impartida por el profesor Julio Waissman, donde para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos dio la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de Github que nos pudieran ayudar de inspiración, pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería).",
+    "tags": [
+      "Deep learning",
+      "CNN",
+      "Machine learning",
+      "dogs",
+      "IA",
+      "Artificial inteligence"
+    ],
+    "title": "Sketch2shiba",
+    "type": "post"
+  }
+]
