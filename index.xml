@@ -20,7 +20,7 @@
 
 &lt;h2 id=&#34;antesedenctes&#34;&gt;Antesedenctes&lt;/h2&gt;
 
-&lt;p&gt;Actualmente curso la materia de redes neuronales impartida por el profesor &lt;a href=&#34;http://mat.uson.mx/~juliowaissman/&#34; target=&#34;_blank&#34;&gt;Julio Waissman&lt;/a&gt;, donde para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos dio la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; que nos pudieran ayudar de inspiración, pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería). Entonces decidí buscar otros proyectos en internet, y fue un poco después de cuando decidí buscar que me encontré con una página de un &lt;a href=&#34;http://cs231n.stanford.edu/project.html&#34; target=&#34;_blank&#34;&gt;curso de Stanford de Redes convolucionales para reconocimiento visual&lt;/a&gt; donde en dicho curso el profesor les dejó como proyecto algo similar a lo que nos habían dejado a nosotros, y al igual que nuestro maestro, también dejó material que podría servir de inspiración y con ello habían proyectos de generaciones pasadas del curso, articulos, proyectos de github, entre otros. La cantidad de diferentes proyectos que había en esta página eran demasiados, pero entre ellos encontré un proyecto de &lt;a href=&#34;http://cs231n.stanford.edu/reports/2017/pdfs/403.pdf&#34; target=&#34;_blank&#34;&gt;coloración automática de bosquejos&lt;/a&gt; donde, en resumen, su red lo que hacía era que a base de un bosquejo o dibujo de algún paisaje, la red colorea el dibujo. Este proyecto se basó en un modelo de red neuronal llamado &lt;a href=&#34;https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix&#34; target=&#34;_blank&#34;&gt;pix2pix&lt;/a&gt; donde tiene su propio artículo llamado &lt;a href=&#34;https://arxiv.org/pdf/1611.07004.pdf&#34; target=&#34;_blank&#34;&gt;Image-to-Image Translation with Conditional Adversarial Networks&lt;/a&gt; el cual tiene su propio artículo llamado &lt;a href=&#34;https://arxiv.org/pdf/1611.07004.pdf&#34; target=&#34;_blank&#34;&gt;Image-to-Image Translation with Conditional Adversarial Networks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Actualmente curso la materia de redes neuronales impartida por el profesor &lt;a href=&#34;http://mat.uson.mx/~juliowaissman/&#34; target=&#34;_blank&#34;&gt;Julio Waissman&lt;/a&gt;, y para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos orientó con la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; que nos pudieran ayudar de inspiración, pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería). Entonces decidí buscar otros proyectos en internet, y fue un poco después de cuando decidí buscar que me encontré con una página de un &lt;a href=&#34;http://cs231n.stanford.edu/project.html&#34; target=&#34;_blank&#34;&gt;curso de Stanford de Redes convolucionales para reconocimiento visual&lt;/a&gt; donde en dicho curso el profesor les dejó como proyecto algo similar a lo que nos habían dejado a nosotros, y al igual que nuestro maestro, también dejó material que podría servir de inspiración y con ello habían proyectos de generaciones pasadas del curso, articulos, proyectos de github, entre otros. La cantidad de diferentes proyectos que había en esta página eran demasiados, pero entre ellos encontré un proyecto de &lt;a href=&#34;http://cs231n.stanford.edu/reports/2017/pdfs/403.pdf&#34; target=&#34;_blank&#34;&gt;coloración automática de bosquejos&lt;/a&gt; donde, en resumen, su red lo que hacía era que a base de un bosquejo o dibujo de algún paisaje, la red colorea el dibujo. Este proyecto se basó en un modelo de red neuronal llamado &lt;a href=&#34;https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix&#34; target=&#34;_blank&#34;&gt;pix2pix&lt;/a&gt; donde tiene su propio artículo llamado &lt;a href=&#34;https://arxiv.org/pdf/1611.07004.pdf&#34; target=&#34;_blank&#34;&gt;Image-to-Image Translation with Conditional Adversarial Networks&lt;/a&gt; el cual tiene su propio artículo llamado &lt;a href=&#34;https://arxiv.org/pdf/1611.07004.pdf&#34; target=&#34;_blank&#34;&gt;Image-to-Image Translation with Conditional Adversarial Networks&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;modelo-pix2pix&#34;&gt;Modelo pix2pix&lt;/h2&gt;
 
@@ -29,7 +29,11 @@
 &lt;p&gt;Las arquitecturas que usan las dos redes de pix2pix son:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Red generativa: El modelo propone usar dos tipos de arquitecturas: &lt;a href=&#34;https://machinelearningmastery.com/encoder-decoder-recurrent-neural-network-models-neural-machine-translation/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;em&gt;encoder-decoder&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; y &lt;a href=&#34;https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;em&gt;U-Net&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;. En una red convolucional consiste en hacer una convolución (downsampling o submuestreo) tras convolución a la imagen usando métodos como max pooling para encontrar los valores más importantes en un grupo de pixeles de la imagen y asi poder generalizar la información que esta en una imagen no importando en que parte de la imagen este dicha información. Entonces, lo que propone pix2pix es que una vez submuestreado la imagen de entrada lo más que se desea, se hace lo contrario al convolución y se hace una convolucion para atras (&lt;em&gt;convolución transpuesta&lt;/em&gt; o &lt;em&gt;deconvolución&lt;/em&gt; (este último termino se recomienda no usarlo ya que es usada en otras áreas de las matemáticas o visión de computadoras)) hasta llegar a las dimensiones de la imagen original de entrada. Pero esta idea se ha mejorado usando una modificación llamada &lt;a href=&#34;https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;encoder-decoder&lt;/em&gt;&lt;/a&gt; que es una arquitectura relativamente nueva del 2014 (no tanto para el área del aprendizaje profundo que es un área que se desarrolla muy rápido) el cual propone traer información de la imagen en un &amp;ldquo;punto del tiempo&amp;rdquo; de cuando estabamos convolucionando la imagen a otro &amp;ldquo;punto del tiempo&amp;rdquo; de cuando estamos convolucionando para atras cuando este tiene la misma dimensión que la imagen de donde estamos trayendo información, esto se puede ver algo así:&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Red generativa: El modelo propone usar dos tipos de arquitecturas: &lt;a href=&#34;https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;em&gt;encoder-decoder&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; y &lt;a href=&#34;https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;em&gt;U-Net&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;En una red convolucional consiste en hacer una convolución (downsampling o submuestreo) tras convolución a la imagen usando métodos como max pooling para encontrar los valores más importantes en un grupo de pixeles de la imagen y asi poder generalizar la información que esta en una imagen no importando en que parte de la imagen este dicha información. Entonces, lo que propone pix2pix es que una vez submuestreado la imagen de entrada lo más que se desea, se hace lo contrario al convolución y se hace una convolucion para atras (&lt;em&gt;convolución transpuesta&lt;/em&gt; o &lt;em&gt;deconvolución&lt;/em&gt; (este último termino se recomienda no usarlo ya que es usada en otras áreas de las matemáticas o visión de computadoras)) hasta llegar a las dimensiones de la imagen original de entrada.&lt;/p&gt;
+
+&lt;p&gt;Esta idea se ha mejorado usando una modificación llamada &lt;strong&gt;&lt;em&gt;encoder-decoder&lt;/em&gt;&lt;/strong&gt; que es una arquitectura relativamente nueva del 2014 (no tanto para el área del aprendizaje profundo que es un área que se desarrolla muy rápido) el cual propone traer información de la imagen en un &amp;ldquo;punto del tiempo&amp;rdquo; de cuando estabamos convolucionando la imagen a otro &amp;ldquo;punto del tiempo&amp;rdquo; de cuando estamos convolucionando para atras cuando este tiene la misma dimensión que la imagen de donde estamos trayendo información, esto se puede ver mejor en la figura 1. De esta manera la información de las imagenes convolucionadas nos indican los objetos que hay en una imagen, y al tranferir la información de momentos antes de convolucionar la imagen al final de donde estamos haciendo convolución atras se puede obtener información de donde esta dicho objeto. Es como tener lo mejor de dos mundos. Esta es más o menos la idea del encoder-decoder. &lt;strong&gt;&lt;em&gt;U-Net&lt;/em&gt;&lt;/strong&gt; es casi lo mismo que el encoder-decoder. La diferencia de esta es que encoder-decoder hace la transferencia de información en &lt;strong&gt;algunos puntos&lt;/strong&gt; de las etapas del proceso de convolucionar la imagen original al final de la convolución (cuando tenemos la imagen en una resolución muy pequeña) y U-Net lo hace en cada capa del proceso, de tal manera donde cada capa $i$ y $n-i$ estan conectados, donde $n$ es el número total de capas. Cada conexión simplemente concatena todos los canales de la capa $i$ con los de la capa $n-i$. La arquitectura de la U-Net se ve como en la figura 2. Por la importancia de los datos de la imagen de entrada con la imagen de salida se optó por usar U-Net como red generativa para el modelo.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -41,14 +45,88 @@
 
 
 
-&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
-  &lt;h4&gt;Diagrama de la arquitectura encoder_decoder&lt;/h4&gt;
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Diagrama de una arquitectura encoder_decoder&lt;/h4&gt;
   
 &lt;/figcaption&gt;
 
 &lt;/figure&gt;
 
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Diagrama de una arquitectura U-Net&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Red discriminativa: Para el modelo pix2pix se diseñó una arquitectura llamada &lt;em&gt;PatchGAN&lt;/em&gt;, la cual solo penaliza la estructura de la imagen a escala de parches. Este discriminador trata de clasificar si cada parce $N \times N $ en una imagen es real o es falsa. El discriminador se ejecuta en cada convolución de la imagen, promediando todos los resultados para producir una salida final $D$. En el articulo original de pix2pix demuestran que $N$ puede ser mucho más pequeño que el tamaño de la imagen completa y aun así producir imagenes de alta calidad, y esto es ventajoso ya que esto produce menos parámetros, ejecuta más rápido, y puede ser aplicado arbitrariamente a imagenes grandes.&lt;/p&gt;
+
+&lt;p&gt;Lo anterior indica que se puede modelar la imagen como un &lt;a href=&#34;https://en.wikipedia.org/wiki/Markov_random_field&#34; target=&#34;_blank&#34;&gt;campo aleatorio de Markov&lt;/a&gt;, asumiendo independiencia entre pixeles separados por más de parche de diametro. Este tipo de suposiciones son usadas en modelos de texturas y estilo. Por lo que &lt;em&gt;PatchGan&lt;/em&gt; puede ser ententido como una forma de perdida de textura/stilo.&lt;/p&gt;
+
+&lt;p&gt;Este discriminador usa una función de perdida $L1$ porque esta produce resultados donde la imagen no sale tan borrosa como $L2$ y hacen que la imagen producida tenga una figura parecida a la imagen de entrada, pero aun asi $L1$ produce imagenes borrasas.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;mi-modelo-sketch2shiba&#34;&gt;Mi modelo sketch2shiba&lt;/h2&gt;
+
+&lt;p&gt;Basandome en los proyectos que he visto como lo son el &lt;a href=&#34;http://cs231n.stanford.edu/reports/2017/pdfs/403.pdf&#34; target=&#34;_blank&#34;&gt;trabajo de los estudiantes de Satanford&lt;/a&gt; y &lt;a href=&#34;https://github.com/zaidalyafeai/zaidalyafeai.github.io/tree/master/pix2pix&#34; target=&#34;_blank&#34;&gt;edges2cats&lt;/a&gt;, decidí por hacer algo similar pero con mi propia base de datos.&lt;/p&gt;
+
+&lt;h3 id=&#34;busqueda-de-ideas&#34;&gt;Busqueda de ideas&lt;/h3&gt;
+
+&lt;p&gt;Tenía algunas de que hacer, pero el problema surgía de donde iba a encontrar los datos con los cuales entrenar mi red. Hay varias bases de datos como ImageNet, CIFAR-10, o podría hacer un script que pudiera descargar imagenes de alguna pagina que contenga muchas imagenes de algo.&lt;/p&gt;
+
+&lt;h3 id=&#34;sacando-los-bosquejos&#34;&gt;Sacando los bosquejos&lt;/h3&gt;
+
+&lt;p&gt;Pero el otro problema es que lo que quería hacer era que a base de algún bosquejo te pintara dicho bosquejo. Entonces debía encontrar alguna manera para hacer los bosquejos, y obviamente no iba a hacer los bosquejos a mano para cientos de imagenes que pensaba usar para entrenar a mi red. Después descubrí librerías como &lt;a href=&#34;https://github.com/opencv/opencv&#34; target=&#34;_blank&#34;&gt;openCV&lt;/a&gt; la cual tiene una función llamada &lt;code&gt;Canny&lt;/code&gt;, que hace algo parecido a encontrar un bosquejo dada una imagen, pero cuando ingresaba una imagen a esta función también sacaba bosquejos del fondo. Fue esto último que me hizo darme cuenta que debía quitar el fondo de las imagenes que quería sacarle un bosquejo, pero a esto tampoco tenía pensado hacerlo a mano a cientos de imagenes, por lo que decidi buscar alguna base de datos que ya tuviera imagenes segmentadas. Y me encontre con una &lt;a href=&#34;http://www.robots.ox.ac.uk/~vgg/data/pets/&#34; target=&#34;_blank&#34;&gt;base de datos de la Universidad de Oxford&lt;/a&gt; donde tienen una base de datos de imagenes de mascotas (perros y gatos) ya segmentados.&lt;/p&gt;
+
+&lt;p&gt;Esto fue un gran alivio porque no encontraba muchas bases de datos que te proporcionen esto, o al menos no para algo específico como un solo tema. Otra cosa que podía sacarle de esto es que podría usar las imagenes segmentadas como los bosquejos (más adelante en el blog explicare porque hice esto).&lt;/p&gt;
+
+&lt;p&gt;Ya encontrados una base de datos que tuvieran imagenes segmentadas, solo quedaba hacer un script que usando una imagen de segmentacion (estas imágenes tienen la misma resolución de la imagen original y cada pixel tienen 3 valores: 1-primer plano, 2-fondo, 3-Sin clasificacion) haga que los pixeles que sean el fondo de la imagen se vuelvan de color blanco. Asi entonces quedaban imagenes parecidas a esta:&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;shiba_inu_9_dual.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Imagen de segmentación en la izquierda e imagen original sin fondo a la derecha&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;decidir-sobre-que-red-hacer&#34;&gt;Decidir sobre que red hacer&lt;/h3&gt;
+
+&lt;p&gt;Tenía una base de datos que tenía varas clases como gatos o perros. O podría ser más especifico con la raza de los gatos o de los perros. Pero no podía tomar solo una clase general como solo perros o gatos para hacer una red sobre uno de ellos y ya.&lt;/p&gt;
+
+&lt;p&gt;La razón era más personal que técnica (aún así habían razones técnicas). No quería hacer una de gatos porque ya existía una y quería hacer algo diferente. Entonces quise hacer una de perros pero hay tantas razas de perros y muchas son muy diferentes de unas de otras y desconfiaba si al final la red podría pintar con tantas diferentes clases. Al final decidí por solo escoger una raza, y la raza que escogí fue &lt;strong&gt;shiba inu&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La razón por la que escogí esa raza es simplemente gusto personal a dicho perro.&lt;/p&gt;
+
+&lt;p&gt;El número de imagenes que había de tenía al final eran 200. Este número es muy poco para una red neuronal, normalmente se usan miles, decenas de miles, o millones de imagenes para entrenar una red, pero me inspiraba confianza que en el articulo original de pix2pix decían que con solo 400 imagenes obtenían resultados satisfactorios. Por lo que no me sentí desalentado al solo tener 200 imagenes.&lt;/p&gt;
+
+&lt;h3 id=&#34;entrenar-la-red-y-problemas-de-cómputo&#34;&gt;Entrenar la red y problemas de cómputo&lt;/h3&gt;
+
+&lt;p&gt;Para entrenar la red sol seguí la guia que habia en el repositorio de Github del modelo pix2pix. Donde solo te piden que ingreses tu base de datos en un directorio, separes que imagenes usaras para entrenar, probar y validar. Después solo se corre un script con los parámetros que se quiere para entrenar tu modelo,  y ¡listo!. Ya tienes tu red que pinta bosquejos de shiba inus&amp;hellip; o eso quisiera.&lt;/p&gt;
+
+&lt;p&gt;La cruda verdad es que entrenar una red neuronal requiere mucho poder de cómputo y si no se tiene tal poder de cómputo entonces entrenar una red tarda mucho tiempo. Dependiendo de la red, tamaño de las imagenes, número de imagenes, entrenar una red tarda desde horas hasta días. Y se requiere entrenar una red varias veces para probar diferentes parámetros de entrenamiento y diferentes arquitecturas de redes. Esto con la finalidad de tener la red más optima posible.&lt;/p&gt;
+
+&lt;p&gt;La Universidad de Sonora cuenta con un área de supercómputo, que por alguna razón su único fuerte es que tienen cientos de procesadores, lo cual no es malo, seguro son útiles para muchos investigadores y maestros. Pero un procesador no es apto para hacer calculos que hace una red neuronal. Una red neuronal hace muchas operaciones matriciales y existen herramientas que son especiales para eso que se llaman unidad de procesamiento gráfico o GPU. Estas son altamente aprovechadas por los frameworks de redes neuronales como Tensorflow, Torch, Caffe, entre otros. Lamentablemente la Unison no cuenta con muchos GPUs. Solo cuenta con 4 GPUs que no pueden ejecutar las librerias requeridas por estos frameworks. También cuentan con un GPU relativamente moderno y más poderoso (GTX 970) que fue donado recientemente por un profesor, pero es solo uno. En el curso de Redes Neuronales somos alrededor de 9, y entrenar una red neuronal a cada uno le tomaba 1 día. También teníamos la fortuna que un profesor de nuestra carrera tenía una computadora con un GPU (un poco vieja e inferior que la GTX 970 pero podía correr las librerias que necesitabamos) y decidió hacer de esa computadora en un pequeño servidor donde nosotros podíamos conectarnos para poder dejar entrenando nuestras redes.&lt;/p&gt;
+
+&lt;p&gt;Estas condiciones que tuvimos hicieron díficil poder conseguir resultados satisfactorios, o al menos a mi porque a diferencia de casi todos mis compañeros, yo no tenía una computadora con GPU en mi casa y dependía de la computadora que teníamos en la carrera y muchas veces siempre lo estaba usando algún otro compañero.&lt;/p&gt;
 </description>
     </item>
     
