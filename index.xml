@@ -103,7 +103,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;shiba_inu_9_dual.jpg&#34; /&gt;
+&lt;img src=&#34;shiba_inu_24_dual.jpg&#34; /&gt;
 
 
 
@@ -341,6 +341,140 @@
 &lt;figure&gt;
 
 &lt;img src=&#34;unet128_207_dual_real_B.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;red-generativa-u-net-254&#34;&gt;Red generativa: U-Net 254&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Bosquejo&lt;/th&gt;
+&lt;th&gt;Imagen generada&lt;/th&gt;
+&lt;th&gt;Imagen real&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_208_dual_real_A.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_208_dual_fake_B.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_208_dual_real_B.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_209_dual_real_A.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_209_dual_fake_B.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_209_dual_real_B.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_210_dual_real_A.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_210_dual_fake_B.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_210_dual_real_B.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_212_dual_real_A.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_212_dual_fake_B.png&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;unet254_212_dual_real_B.png&#34; /&gt;
 
 
 &lt;/figure&gt;&lt;/td&gt;
