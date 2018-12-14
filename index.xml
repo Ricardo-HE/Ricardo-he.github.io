@@ -11,6 +11,198 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Teoría De Clasificadores</title>
+      <link>https://ricardohe97.github.io/post/teoria-de-clasificadores/</link>
+      <pubDate>Tue, 27 Nov 2018 14:28:55 -0700</pubDate>
+      
+      <guid>https://ricardohe97.github.io/post/teoria-de-clasificadores/</guid>
+      <description>
+
+&lt;h2 id=&#34;dimensión-vc&#34;&gt;Dimensión VC&lt;/h2&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;dim_vc.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+  &lt;h4&gt;Dimensión VC de $f_{d_v}(x) = N^{d_v}e^{-N}$&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;aproximación-a-sen-pi-x-con-h-1-y-h-2&#34;&gt;Aproximación a $sen(\pi x)$ con $H_1$ y $H_2$&lt;/h2&gt;
+
+&lt;h3 id=&#34;h-1&#34;&gt;$H_1$&lt;/h3&gt;
+
+&lt;p&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H1-10.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;$H_1$ para 10 datos&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H1-50.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;$H_1$ para 50 datos&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H1-100.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;$H_1$ para 100 datos&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H1-1000.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;$H_1$ para 1000 datos&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;sesgos-y-varianzas-para-h-1&#34;&gt;Sesgos y varianzas para $H_1$&lt;/h4&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H1-Bias_Var.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Sesgos y varianzas para $H_1$&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;h-2&#34;&gt;$H_2$&lt;/h3&gt;
+
+&lt;p&gt;
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H2-10.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;$H_2$ para 10 datos&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H2-50.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;$H_2$ para 50 datos&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H2-100.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;$H_2$ para 100 datos&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H2-1000.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;$H_2$ para 1000 datos&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;sesgos-y-varianzas-para-h-2&#34;&gt;Sesgos y varianzas para $H_2$&lt;/h4&gt;
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;H2-Bias_Var.png&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figura &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Sesgos y varianzas para $H_2$&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sketch2shiba</title>
       <link>https://ricardohe97.github.io/post/sketch2shiba/</link>
       <pubDate>Fri, 09 Nov 2018 11:18:37 -0700</pubDate>

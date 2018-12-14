@@ -3,6 +3,27 @@
     "authors": [
       "Ricardo Holguin Esquer"
     ],
+    "categories": [],
+    "content": " Dimensión VC  Dimensión VC de $f_{d_v}(x) = N^{d_v}e^{-N}$   Aproximación a $sen(\\pi x)$ con $H_1$ y $H_2$ $H_1$   $H_1$ para 10 datos    $H_1$ para 50 datos    $H_1$ para 100 datos    $H_1$ para 1000 datos  \nSesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ para 10 datos    $H_2$ para 50 datos    $H_2$ para 100 datos    $H_2$ para 1000 datos  \nSesgos y varianzas para $H_2$  Sesgos y varianzas para $H_2$   ",
+    "date": 1543354135,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "es",
+    "lastmod": 1543354135,
+    "objectID": "aaff3ae1cf1d827830f38a5a43193420",
+    "permalink": "https://ricardohe97.github.io/post/teoria-de-clasificadores/",
+    "publishdate": "2018-11-27T14:28:55-07:00",
+    "relpermalink": "/post/teoria-de-clasificadores/",
+    "section": "post",
+    "summary": "Dimensión VC  Dimensión VC de $f_{d_v}(x) = N^{d_v}e^{-N}$   Aproximación a $sen(\\pi x)$ con $H_1$ y $H_2$ $H_1$   $H_1$ para 10 datos    $H_1$ para 50 datos    $H_1$ para 100 datos    $H_1$ para 1000 datos  \nSesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ para 10 datos    $H_2$ para 50 datos    $H_2$ para 100 datos    $H_2$ para 1000 datos",
+    "tags": [],
+    "title": "Teoría De Clasificadores",
+    "type": "post"
+  },
+  {
+    "authors": [
+      "Ricardo Holguin Esquer"
+    ],
     "categories": [
       "Deep learning"
     ],

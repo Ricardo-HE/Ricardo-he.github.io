@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Teoría De Clasificadores</title>
+      <link>https://ricardohe97.github.io/post/teoria-de-clasificadores/</link>
+      <pubDate>Tue, 27 Nov 2018 14:28:55 -0700</pubDate>
+      
+      <guid>https://ricardohe97.github.io/post/teoria-de-clasificadores/</guid>
+      <description>Dimensión VC  Dimensión VC de $f_{d_v}(x) = N^{d_v}e^{-N}$   Aproximación a $sen(\pi x)$ con $H_1$ y $H_2$ $H_1$   $H_1$ para 10 datos    $H_1$ para 50 datos    $H_1$ para 100 datos    $H_1$ para 1000 datos  
+Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ para 10 datos    $H_2$ para 50 datos    $H_2$ para 100 datos    $H_2$ para 1000 datos</description>
+    </item>
+    
+    <item>
       <title>Sketch2shiba</title>
       <link>https://ricardohe97.github.io/post/sketch2shiba/</link>
       <pubDate>Fri, 09 Nov 2018 11:18:37 -0700</pubDate>
