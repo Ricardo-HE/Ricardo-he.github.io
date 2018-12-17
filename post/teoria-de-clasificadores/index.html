@@ -15,8 +15,8 @@
   
     
   
-  <meta name="description" content="Dimensión VC  Dimensión VC de $f_{d_v}(x) = N^{d_v}e^{-N}$   Aproximación a $sen(\pi x)$ con $H_1$ y $H_2$ $H_1$   $H_1$ para 10 datos    $H_1$ para 50 datos    $H_1$ para 100 datos    $H_1$ para 1000 datos  
-Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ para 10 datos    $H_2$ para 50 datos    $H_2$ para 100 datos    $H_2$ para 1000 datos">
+  <meta name="description" content="Dimensión VC La dimensión VC es definido por Vapnik y Chervonenkis, quienes dicen que cada clasificador tiene una dimension VC, el cual es la cardinalidad (tamaño) del conjunto más grande de datos que el clasificador pueda desentrañar.
+Es importante entender la importancia práctica de la dimensión VC. En muchos casos, el número exacto de la dimensión VC de un clasificador no es importante. Más bien, es usado más para clasificar diferentes tipos de algoritmos por su complejidad; por ejemplo, la clase de clasificadores simples podría incluir figuras basicas como lineas, circulos, o rectangulos, donde la clase de clasificadores complejos puede incluir clasificadores como perceptron de multiples capas, potenciación del gradiente, u otro clasificador no lineal.">
 
   
   <link rel="alternate" hreflang="es" href="https://ricardohe97.github.io/post/teoria-de-clasificadores/">
@@ -97,8 +97,8 @@ Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ par
   <meta property="og:site_name" content="Ricardo Holguin">
   <meta property="og:url" content="https://ricardohe97.github.io/post/teoria-de-clasificadores/">
   <meta property="og:title" content="Teoría De Clasificadores | Ricardo Holguin">
-  <meta property="og:description" content="Dimensión VC  Dimensión VC de $f_{d_v}(x) = N^{d_v}e^{-N}$   Aproximación a $sen(\pi x)$ con $H_1$ y $H_2$ $H_1$   $H_1$ para 10 datos    $H_1$ para 50 datos    $H_1$ para 100 datos    $H_1$ para 1000 datos  
-Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ para 10 datos    $H_2$ para 50 datos    $H_2$ para 100 datos    $H_2$ para 1000 datos">
+  <meta property="og:description" content="Dimensión VC La dimensión VC es definido por Vapnik y Chervonenkis, quienes dicen que cada clasificador tiene una dimension VC, el cual es la cardinalidad (tamaño) del conjunto más grande de datos que el clasificador pueda desentrañar.
+Es importante entender la importancia práctica de la dimensión VC. En muchos casos, el número exacto de la dimensión VC de un clasificador no es importante. Más bien, es usado más para clasificar diferentes tipos de algoritmos por su complejidad; por ejemplo, la clase de clasificadores simples podría incluir figuras basicas como lineas, circulos, o rectangulos, donde la clase de clasificadores complejos puede incluir clasificadores como perceptron de multiples capas, potenciación del gradiente, u otro clasificador no lineal.">
   
   
     
@@ -263,7 +263,7 @@ Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ par
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min de lectura
+    5 min de lectura
   </span>
   
 
@@ -348,6 +348,12 @@ Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ par
 
 <h2 id="dimensión-vc">Dimensión VC</h2>
 
+<p>La dimensión VC es definido por Vapnik y Chervonenkis, quienes dicen que cada clasificador tiene una dimension VC, el cual es la cardinalidad (tamaño) del conjunto más grande de datos que el clasificador pueda desentrañar.</p>
+
+<p>Es importante entender la importancia práctica de la dimensión VC. En muchos casos, el número exacto de la dimensión VC de un clasificador no es importante. Más bien, es usado más para clasificar diferentes tipos de algoritmos por su complejidad; por ejemplo, la clase de clasificadores simples podría incluir figuras basicas como lineas, circulos, o rectangulos, donde la clase de clasificadores complejos puede incluir clasificadores como perceptron de multiples capas, potenciación del gradiente, u otro clasificador no lineal. La complejidad de un algoritmo de clasificación, el cual es directamente relacionado a su dimensión VC, esta relacionado al intercambio entre el sesgo y varianza</p>
+
+<p>Para ver el comportamiento de la dimensión VC están las siguientes gráficas de una función que depende del tamaño del conjunto de entrenamiento.</p>
+
 
 
 
@@ -358,17 +364,27 @@ Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ par
 
 
 <figcaption data-pre="Figura " data-post=":" class="numbered">
-  <h4>Dimensión VC de $f_{d_v}(x) = N^{d_v}e^{-N}$</h4>
+  <h4>$f_{d_v}(x) = N^{d_v}e^{-N}$</h4>
   
 </figcaption>
 
 </figure>
 
-<h2 id="aproximación-a-sen-pi-x-con-h-1-y-h-2">Aproximación a $sen(\pi x)$ con $H_1$ y $H_2$</h2>
+<h2 id="aproximación-a-f-x-sen-pi-x-con-diferentes-hipótesis">Aproximación a $f(x) = sen(\pi x)$ con diferentes hipótesis</h2>
+
+<p>A continuación se aproximara la función $f(x) = sen(\pi x)$ con dos hipótesis. Con una hipótesis $H_1$ el cual es una función constante.
+Y con una hipótesis $H_2$ el cual es una función lineal.</p>
+
+<p>Las dos hipótesis anteriores se calcularán para 10, 50, 100 y 1000 datos diferentes. Al final se calcularan los sesgos y varianza de los resultados
+con la función que se trata de aproximar</p>
 
 <h3 id="h-1">$H_1$</h3>
 
-<p>
+<p>Para encontrar el valor constante de cada recta, se sacarán dos números aleatorios entre -1 y 1. Y $H_1$ se calculara como $\frac{y_1 + y_2}{2}$,
+y el resultado será la recta.</p>
+
+<p>Resultados:
+
 
 
 <figure>
@@ -431,6 +447,8 @@ Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ par
 
 <h4 id="sesgos-y-varianzas-para-h-1">Sesgos y varianzas para $H_1$</h4>
 
+<p>Los sesgos y varianzas de esta hipotesis muestran un resultado que debería de pasar, donde los sesgos poco a poco disminuyen y la varianza
+poco a poco van subiendo. Esto es porque se trata de aproximar a la función original y se quiere tener el menor error posible (sesgo), pero al mismo tiempo se trata de generalizar entonces la varianza va aumentando.
 
 
 
@@ -445,11 +463,14 @@ Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ par
   
 </figcaption>
 
-</figure>
+</figure></p>
 
 <h3 id="h-2">$H_2$</h3>
 
-<p>
+<p>$H_2$ es una función lineal, así que como tal se debe de calcular su pendiente y su constante $b$, para al final tener la función $y = mx + b$. Para encontrar esto, se sacan dos números aleatorios entre -1 y 1 para que estos sean las variables $x$ y luego ingresan estos en la función que se trata de aproximar ($f(x) = sen(\pi x)$ y con los valores que salgan serán usados para las variables $y$ y con esto calcular la pendiente. Después de calcular la pendiente, usando la pendiente calculada, una $y$ y una $x$, se calcula $b$. El resulado es una ecuación en su forma $y = mx + b$.</p>
+
+<p>Resultados:
+
 
 
 <figure>
@@ -512,6 +533,7 @@ Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ par
 
 <h4 id="sesgos-y-varianzas-para-h-2">Sesgos y varianzas para $H_2$</h4>
 
+<p>Aquí los resultados son más caóticos, y tienen sentido de porque. Sabemos que la función es $f(x) = Sen(\pi x)$ y los valores que puede dar esta función siempre están entre -1 y 1, y es posible que muchas  de las rectas que se calculen tengan una pendiente los suficientemente bastante alta para que cuando se calcule el error este sea muy alto en ciertos puntos de $x$. Pero también se puede notar que cuando se calculan muchas rectas el sesgo y la varianza llegan a ser poco y estos están más cercanos.
 
 
 
@@ -526,12 +548,75 @@ Sesgos y varianzas para $H_1$  Sesgos y varianzas para $H_1$   $H_2$   $H_2$ par
   
 </figcaption>
 
-</figure>
+</figure></p>
+
+<h2 id="ajuste-de-polinomios">Ajuste de polinomios</h2>
+
+<p>Cuando se quiere aproximar a una función también se debe tomar en cuenta una cosa importante: el ruido. El ruido puede ser determinista o estocástico. El ruido estocástico es el ruido que puede haber en nuestros datos y el ruido determinista es el ruido que puede haber cuando la función que se trata de modelar es muy complejo.</p>
+
+<h4 id="ejercicio-de-ruido-estocástico">Ejercicio de ruido estocástico</h4>
+
+<p>A continuación se tratará de ajustar un polinomio de bessel, especificamente una función modificada de Bessel de segundo tipo de orden 2. Y a cada punto y que se genere se le agregará un ruido calculada con una distribución normal con un $\sigma = 1.2$ y $\mu = 0$. Los polinomios con los que se tratará de ajustar serán de orden 2 y orden 3, esto con la finalidad de ver con que grado de polinomio resultan con menos error. El siguiente codigo muestra como hacer este ejercicio.</p>
+
+<pre><code class="language-python">import numpy as np
+import scipy.special
+
+def generar_datos(N, n, sigma, Q):
+    &quot;&quot;&quot;
+    @N numero de datos para entrenamiento
+    @n Numero de datos
+    @sigma Desviacion estandar
+    @Q orden del polinomio
+    &quot;&quot;&quot;
+    D = scipy.special.kn(Q, n) + np.random.normal(loc=0.0, scale=1.2, size=n)
+    x_t = np.random.choice(range(n), N)
+    D_t = D[x_t]
+    return D, D_t, x_t
+
+def delta(D, D_t, x_t):
+    &quot;&quot;&quot;
+    @D datos
+    @D_t datos de entrenamiento
+    @x_t datos de $x$ para evaluar los polinomios
+    &quot;&quot;&quot;
+    y_2 = np.polyval(np.polyfit(x_t, D_t, 2), range(len(D)))
+    y_10 = np.polyval(np.polyfit(x_t, D_t, 10), range(len(D)))
+
+    E_2 = np.mean((D - y_2)**2)
+    E_10 = np.mean((D - y_10)**2)
+    return E_10 - E_2, E_10, E_2
+
+</code></pre>
+
+<pre><code class="language-python">&gt;&gt;&gt; D, D_t, x_t = generar_datos(80, 1000, 1, 2)
+
+&gt;&gt;&gt; delta(D, D_t, x_t)
+(0.15908868155723654, 1.637024755415497, 1.4779360738582605)
+
+</code></pre>
+
+<p>Con los resultados anteriores se puede apreciar que el error que se tiene con un polinomio de grado 2 es menor que el que se tiene con el polinomio de grado 10, por lo que en este caso es mejor usar el polinomio de grado 2</p>
 
     </div>
 
     
 
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/teoria-del-aprendizaje/">Teoria del aprendizaje</a>
+  
+  <a class="badge badge-light" href="/tags/sesgo/">Sesgo</a>
+  
+  <a class="badge badge-light" href="/tags/varianza/">Varianza</a>
+  
+  <a class="badge badge-light" href="/tags/bias/">bias</a>
+  
+  <a class="badge badge-light" href="/tags/var/">var</a>
+  
+  <a class="badge badge-light" href="/tags/ruido/">Ruido</a>
+  
+</div>
 
 
 

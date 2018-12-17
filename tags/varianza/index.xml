@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Ricardo Holguin</title>
-    <link>https://ricardohe97.github.io/post/</link>
-    <description>Recent content in Posts on Ricardo Holguin</description>
+    <title>Varianza on Ricardo Holguin</title>
+    <link>https://ricardohe97.github.io/tags/varianza/</link>
+    <description>Recent content in Varianza on Ricardo Holguin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 27 Nov 2018 14:28:55 -0700</lastBuildDate>
     
-	<atom:link href="https://ricardohe97.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ricardohe97.github.io/tags/varianza/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <guid>https://ricardohe97.github.io/post/teoria-de-clasificadores/</guid>
       <description>Dimensión VC La dimensión VC es definido por Vapnik y Chervonenkis, quienes dicen que cada clasificador tiene una dimension VC, el cual es la cardinalidad (tamaño) del conjunto más grande de datos que el clasificador pueda desentrañar.
 Es importante entender la importancia práctica de la dimensión VC. En muchos casos, el número exacto de la dimensión VC de un clasificador no es importante. Más bien, es usado más para clasificar diferentes tipos de algoritmos por su complejidad; por ejemplo, la clase de clasificadores simples podría incluir figuras basicas como lineas, circulos, o rectangulos, donde la clase de clasificadores complejos puede incluir clasificadores como perceptron de multiples capas, potenciación del gradiente, u otro clasificador no lineal.</description>
-    </item>
-    
-    <item>
-      <title>Sketch2shiba</title>
-      <link>https://ricardohe97.github.io/post/sketch2shiba/</link>
-      <pubDate>Fri, 09 Nov 2018 11:18:37 -0700</pubDate>
-      
-      <guid>https://ricardohe97.github.io/post/sketch2shiba/</guid>
-      <description>Antecedentes Actualmente curso la materia de redes neuronales impartida por el profesor Julio Waissman, y para proyecto de mitad de curso teníamos que hacer alguna red neuronal convolucional (CNN). El profesor nos orientó con la idea de basarnos en algún proyecto o red ya hecha y aplicarla a otra idea que tengamos. También nos mostró algunos artículo o proyectos de Github que nos pudieran ayudar de inspiración. Pero ninguno de los ejemplo que nos mostró me llamó mucho la atención (porque me parecían aburridos o algún otro compañero tomó algún proyecto que también yo quería).</description>
     </item>
     
   </channel>

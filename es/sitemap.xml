@@ -73,7 +73,7 @@
     
     <url>
     
-      <loc>https://ricardohe97.github.io/tags/deep-learning/</loc>
+      <loc>https://ricardohe97.github.io/categories/deep-learning/</loc>
       <lastmod>2018-11-09T11:18:37-07:00</lastmod>
       <priority>0</priority>
     </url>
@@ -82,7 +82,7 @@
     
     <url>
     
-      <loc>https://ricardohe97.github.io/categories/deep-learning/</loc>
+      <loc>https://ricardohe97.github.io/tags/deep-learning/</loc>
       <lastmod>2018-11-09T11:18:37-07:00</lastmod>
       <priority>0</priority>
     </url>
@@ -132,6 +132,24 @@
     
     <url>
     
+      <loc>https://ricardohe97.github.io/tags/ruido/</loc>
+      <lastmod>2018-11-27T14:28:55-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://ricardohe97.github.io/tags/sesgo/</loc>
+      <lastmod>2018-11-27T14:28:55-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="https://ricardohe97.github.io/tags/" hreflang="es"/>
       <xhtml:link rel="alternate" href="https://ricardohe97.github.io/en/tags/" hreflang="en"/>
     
@@ -144,8 +162,44 @@
     
     <url>
     
+      <loc>https://ricardohe97.github.io/tags/teoria-del-aprendizaje/</loc>
+      <lastmod>2018-11-27T14:28:55-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://ricardohe97.github.io/tags/varianza/</loc>
+      <lastmod>2018-11-27T14:28:55-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://ricardohe97.github.io/tags/bias/</loc>
+      <lastmod>2018-11-27T14:28:55-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://ricardohe97.github.io/tags/dogs/</loc>
       <lastmod>2018-11-09T11:18:37-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://ricardohe97.github.io/tags/var/</loc>
+      <lastmod>2018-11-27T14:28:55-07:00</lastmod>
       <priority>0</priority>
     </url>
     
